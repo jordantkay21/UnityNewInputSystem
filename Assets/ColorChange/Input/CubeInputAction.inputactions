@@ -1,0 +1,34 @@
+{
+    "name": "CubeInputAction",
+    "maps": [
+        {
+            "name": "Cube",
+            "id": "4a276bb6-daa4-4893-8087-c30b5a1ae212",
+            "actions": [
+                {
+                    "name": "ColorChange",
+                    "type": "Button",
+                    "id": "14fe5158-ff41-40c7-950a-a1f69bf87b28",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "454311ed-e2d3-4f78-bdaa-189f9cc41fb7",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ColorChange",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
