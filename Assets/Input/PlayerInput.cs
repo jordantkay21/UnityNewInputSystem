@@ -10,12 +10,17 @@ public class PlayerInput : MonoBehaviour
     private void Start()
     {
         _input = new PlayerInputActions();
-        _input.Dog.Enable();
-        _input.Dog.Bark.performed += Bark_performed;
+        _input.Player.Enable();
+
     }
 
-    private void Bark_performed(InputAction.CallbackContext context)
+    private void Update()
     {
-        Debug.Log("Done Barking...: " + context);
+        Vector2 move = _input.Player.Movement.ReadValue<Vector2>();
+
+        transform.Translate(new Vector3(move.x, 0, move.y) * Time.deltaTime * 5.0f);
     }
+
 }
+
+
