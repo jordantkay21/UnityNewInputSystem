@@ -45,6 +45,7 @@ public class PlayerInput : MonoBehaviour
         Vector2 move = _input.Walking.Movement.ReadValue<Vector2>();
         transform.Translate(new Vector3(move.x, 0, move.y) * Time.deltaTime * 3.0f);
     }
+
 }
 
 
